@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<hale-project version="2.7.0.201310041528">
+    <name>Map to INSPIRE Geographical Names 3.0</name>
+    <author>Thorsten Reitz</author>
+    <description>Preconfigured with INSPIRE Geographical Names as target schema and associated code lists.</description>
+    <created>2013-10-06T10:39:33.884+02:00</created>
+    <modified>2013-10-06T10:48:53.001+02:00</modified>
+    <save-config action-id="project.save" provider-id="eu.esdihumboldt.hale.io.project.hale25.xml.writer">
+        <setting name="projectFiles.separate">false</setting>
+        <setting name="target">file:/C:/Projekte/thorsten/hale-src/hale/util/plugins/eu.esdihumboldt.util.resource.schemas.inspire.annex1/annex1/projects/GeographicalNames.halex</setting>
+        <setting name="charset">UTF-8</setting>
+        <setting name="contentType">eu.esdihumboldt.hale.io.project.hale25.xml</setting>
+    </save-config>
+    <resource action-id="eu.esdihumboldt.hale.io.schema.read.target" provider-id="eu.esdihumboldt.hale.io.xsd.reader">
+        <setting name="resourceId">6f533f32-247d-4fa8-9b75-26d28aa6deb2</setting>
+        <setting name="source">../3.0/GeographicalNames.xsd</setting>
+        <setting name="charset">UTF-8</setting>
+        <setting name="contentType">eu.esdihumboldt.hale.io.xsd</setting>
+    </resource>
+    <resource action-id="eu.esdihumboldt.hale.codelist.read" provider-id="eu.esdihumboldt.hale.io.codelist.xml.reader">
+        <setting name="resourceId">db0dfffa-f807-4aef-80d1-dd56f0cc9840</setting>
+        <setting name="source">../codelists/GrammaticalGenderValue.xml</setting>
+        <setting name="charset">UTF-8</setting>
+        <setting name="contentType">eu.esdihumboldt.hale.io.codelist.xml</setting>
+    </resource>
+    <resource action-id="eu.esdihumboldt.hale.codelist.read" provider-id="eu.esdihumboldt.hale.io.codelist.xml.reader">
+        <setting name="resourceId">072f491c-02c3-491c-86c8-0494d8837a77</setting>
+        <setting name="source">../codelists/GrammaticalNumberValue.xml</setting>
+        <setting name="charset">UTF-8</setting>
+        <setting name="contentType">eu.esdihumboldt.hale.io.codelist.xml</setting>
+    </resource>
+    <resource action-id="eu.esdihumboldt.hale.codelist.read" provider-id="eu.esdihumboldt.hale.io.codelist.xml.reader">
+        <setting name="resourceId">12904cd0-2e48-472b-9ec7-b576a5756088</setting>
+        <setting name="source">../codelists/NameStatusValue.xml</setting>
+        <setting name="charset">UTF-8</setting>
+        <setting name="contentType">eu.esdihumboldt.hale.io.codelist.xml</setting>
+    </resource>
+    <resource action-id="eu.esdihumboldt.hale.codelist.read" provider-id="eu.esdihumboldt.hale.io.codelist.xml.reader">
+        <setting name="resourceId">ff8e4fc0-d744-45de-bbe3-233adc6f4a38</setting>
+        <setting name="source">../codelists/NamedPlaceTypeValue.xml</setting>
+        <setting name="charset">UTF-8</setting>
+        <setting name="contentType">eu.esdihumboldt.hale.io.codelist.xml</setting>
+    </resource>
+    <resource action-id="eu.esdihumboldt.hale.codelist.read" provider-id="eu.esdihumboldt.hale.io.codelist.xml.reader">
+        <setting name="resourceId">4226c921-96b6-490a-a6bb-cd1eab1177d9</setting>
+        <setting name="source">../codelists/NativenessValue.xml</setting>
+        <setting name="charset">UTF-8</setting>
+        <setting name="contentType">eu.esdihumboldt.hale.io.codelist.xml</setting>
+    </resource>
+    <file name="styles.sld" location="GeographicalNames.halex.styles.sld"/>
+    <file name="alignment.xml" location="GeographicalNames.halex.alignment.xml"/>
+    <complex-property name="codelists">
+        <associations>
+            <codeList identifier="NativenessValue" namespace="urn:x-inspire:specification:gmlas:GeographicalNames:3.0">
+                <entity>
+                    <type name="GeographicalNameType" namespace="urn:x-inspire:specification:gmlas:GeographicalNames:3.0"/>
+                    <property name="nativeness" namespace="urn:x-inspire:specification:gmlas:GeographicalNames:3.0"/>
+                </entity>
+            </codeList>
+            <codeList identifier="NamedPlaceTypeValue" namespace="urn:x-inspire:specification:gmlas:GeographicalNames:3.0">
+                <entity>
+                    <type name="NamedPlaceType" namespace="urn:x-inspire:specification:gmlas:GeographicalNames:3.0"/>
+                    <property name="type" namespace="urn:x-inspire:specification:gmlas:GeographicalNames:3.0"/>
+                </entity>
+            </codeList>
+            <codeList identifier="NameStatusValue" namespace="urn:x-inspire:specification:gmlas:GeographicalNames:3.0">
+                <entity>
+                    <type name="GeographicalNameType" namespace="urn:x-inspire:specification:gmlas:GeographicalNames:3.0"/>
+                    <property name="nameStatus" namespace="urn:x-inspire:specification:gmlas:GeographicalNames:3.0"/>
+                </entity>
+            </codeList>
+            <codeList identifier="ConditionOfFacilityValue" namespace="urn:x-inspire:specification:gmlas:BaseTypes:3.2">
+                <entity>
+                    <type name="ConditionOfAirFacilityType" namespace="urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0"/>
+                    <property name="currentStatus" namespace="urn:x-inspire:specification:gmlas:CommonTransportElements:3.0"/>
+                </entity>
+            </codeList>
+            <codeList identifier="CadastralZoningLevelValue" namespace="urn:x-inspire:specification:gmlas:CadastralParcels:3.0">
+                <entity>
+                    <type name="CadastralZoningType" namespace="urn:x-inspire:specification:gmlas:CadastralParcels:3.0"/>
+                    <property name="level" namespace="urn:x-inspire:specification:gmlas:CadastralParcels:3.0"/>
+                </entity>
+            </codeList>
+        </associations>
+    </complex-property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:GeographicalNames:3.0}NamedPlaceType/1">{urn:x-inspire:specification:gmlas:GeographicalNames:3.0}geometry</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:GeographicalNames:3.0}NamedPlaceType/2">{http://www.opengis.net/gml/3.2/AbstractGeometry}choice</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:GeographicalNames:3.0}NamedPlaceType/count">2</property>
+</hale-project>

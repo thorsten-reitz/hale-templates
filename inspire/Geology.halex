@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<hale-project version="2.7.0.201310041528">
+    <name>Map to INSPIRE Geology 3.0</name>
+    <author>Thorsten Reitz</author>
+    <description>Preconfigured with INSPIRE Geology as target schema and associated code lists.</description>
+    <created>2013-10-06T10:49:22.813+02:00</created>
+    <modified>2013-10-06T10:54:44.801+02:00</modified>
+    <save-config action-id="project.save" provider-id="eu.esdihumboldt.hale.io.project.hale25.xml.writer">
+        <setting name="projectFiles.separate">false</setting>
+        <setting name="target">file:/C:/Projekte/thorsten/hale-src/hale/util/plugins/eu.esdihumboldt.util.resource.schemas.inspire.annex1/annex1/projects/Geology.halex</setting>
+        <setting name="charset">UTF-8</setting>
+        <setting name="contentType">eu.esdihumboldt.hale.io.project.hale25.xml</setting>
+    </save-config>
+    <resource action-id="eu.esdihumboldt.hale.io.schema.read.target" provider-id="eu.esdihumboldt.hale.io.xsd.reader">
+        <setting name="resourceId">4171f3b3-f669-45a8-95af-9d66a0bbd92b</setting>
+        <setting name="source">../3.0/Geology.xsd</setting>
+        <setting name="charset">UTF-8</setting>
+        <setting name="contentType">eu.esdihumboldt.hale.io.xsd</setting>
+    </resource>
+    <file name="styles.sld" location="Geology.halex.styles.sld"/>
+    <file name="alignment.xml" location="Geology.halex.alignment.xml"/>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:Geology:0.0}SpringOrSeepType/1">{urn:x-inspire:specification:gmlas:HydroPhysicalWaters:3.0}geometry</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:Geology:0.0}SpringOrSeepType/2">{http://www.opengis.net/gml/3.2/AbstractGeometricPrimitive}choice</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:Geology:0.0}SpringOrSeepType/count">2</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:Geology:0.0}VanishingPointType/1">{urn:x-inspire:specification:gmlas:HydroPhysicalWaters:3.0}geometry</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:Geology:0.0}VanishingPointType/2">{http://www.opengis.net/gml/3.2/AbstractGeometricPrimitive}choice</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:Geology:0.0}VanishingPointType/count">2</property>
+</hale-project>

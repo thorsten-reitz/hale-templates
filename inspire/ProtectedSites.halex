@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<hale-project version="2.7.0.201310041528">
+    <name>Map to INSPIRE Protected Sites 3.0</name>
+    <author>Thorsten Reitz</author>
+    <description>Preconfigured with INSPIRE Protected Sites as target schema and associated code lists.</description>
+    <created>2013-10-06T10:54:45.717+02:00</created>
+    <modified>2013-10-06T11:12:12.411+02:00</modified>
+    <save-config action-id="project.save" provider-id="eu.esdihumboldt.hale.io.project.hale25.xml.writer">
+        <setting name="projectFiles.separate">false</setting>
+        <setting name="target">file:/C:/Projekte/thorsten/hale-src/hale/util/plugins/eu.esdihumboldt.util.resource.schemas.inspire.annex1/annex1/projects/ProtectedSites.halex</setting>
+        <setting name="charset">UTF-8</setting>
+        <setting name="contentType">eu.esdihumboldt.hale.io.project.hale25.xml</setting>
+    </save-config>
+    <resource action-id="eu.esdihumboldt.hale.io.schema.read.target" provider-id="eu.esdihumboldt.hale.io.xsd.reader">
+        <setting name="resourceId">5cbda21d-0c30-4981-9d4b-679fcc6817f7</setting>
+        <setting name="source">../3.0/ProtectedSites.xsd</setting>
+        <setting name="charset">UTF-8</setting>
+        <setting name="contentType">eu.esdihumboldt.hale.io.xsd</setting>
+    </resource>
+    <resource action-id="eu.esdihumboldt.hale.codelist.read" provider-id="eu.esdihumboldt.hale.io.codelist.xml.reader">
+        <setting name="resourceId">15b9ec4e-9e70-48fc-8b23-9456e6f56da7</setting>
+        <setting name="source">../codelists/DesignationSchemeValue.xml</setting>
+        <setting name="charset">UTF-8</setting>
+        <setting name="contentType">eu.esdihumboldt.hale.io.codelist.xml</setting>
+    </resource>
+    <resource action-id="eu.esdihumboldt.hale.codelist.read" provider-id="eu.esdihumboldt.hale.io.codelist.xml.reader">
+        <setting name="resourceId">3ab9e649-7d2f-4712-a78d-a57b57082bdb</setting>
+        <setting name="source">../codelists/DesignationValue.xml</setting>
+        <setting name="charset">UTF-8</setting>
+        <setting name="contentType">eu.esdihumboldt.hale.io.codelist.xml</setting>
+    </resource>
+    <resource action-id="eu.esdihumboldt.hale.codelist.read" provider-id="eu.esdihumboldt.hale.io.codelist.xml.reader">
+        <setting name="resourceId">ca3cb100-435d-4385-b4af-b5796c236357</setting>
+        <setting name="source">../codelists/RamsarDesignationValue.xml</setting>
+        <setting name="charset">UTF-8</setting>
+        <setting name="contentType">eu.esdihumboldt.hale.io.codelist.xml</setting>
+    </resource>
+    <resource action-id="eu.esdihumboldt.hale.codelist.read" provider-id="eu.esdihumboldt.hale.io.codelist.xml.reader">
+        <setting name="resourceId">8b383a8e-4c58-4a35-8815-9e75a2a98379</setting>
+        <setting name="source">../codelists/UNESCOManAndBiosphereProgrammeDesignationValue.xml</setting>
+        <setting name="charset">UTF-8</setting>
+        <setting name="contentType">eu.esdihumboldt.hale.io.codelist.xml</setting>
+    </resource>
+    <resource action-id="eu.esdihumboldt.hale.codelist.read" provider-id="eu.esdihumboldt.hale.io.codelist.xml.reader">
+        <setting name="resourceId">ee853e5b-c3b1-4174-bc84-ca0ef17bc8eb</setting>
+        <setting name="source">../codelists/UNESCOWorldHeritageDesignationValue.xml</setting>
+        <setting name="charset">UTF-8</setting>
+        <setting name="contentType">eu.esdihumboldt.hale.io.codelist.xml</setting>
+    </resource>
+    <resource action-id="eu.esdihumboldt.hale.codelist.read" provider-id="eu.esdihumboldt.hale.io.codelist.xml.reader">
+        <setting name="resourceId">0c4d58af-b06b-428d-9c4c-453bbedd571e</setting>
+        <setting name="source">../codelists/EmeraldNetworkDesignationValue.xml</setting>
+        <setting name="charset">UTF-8</setting>
+        <setting name="contentType">eu.esdihumboldt.hale.io.codelist.xml</setting>
+    </resource>
+    <resource action-id="eu.esdihumboldt.hale.codelist.read" provider-id="eu.esdihumboldt.hale.io.codelist.xml.reader">
+        <setting name="resourceId">582a6703-072e-48c7-819d-2fc5ad8cb722</setting>
+        <setting name="source">../codelists/IUCNDesignationValue.xml</setting>
+        <setting name="charset">UTF-8</setting>
+        <setting name="contentType">eu.esdihumboldt.hale.io.codelist.xml</setting>
+    </resource>
+    <resource action-id="eu.esdihumboldt.hale.codelist.read" provider-id="eu.esdihumboldt.hale.io.codelist.xml.reader">
+        <setting name="resourceId">eb147101-59fc-4759-b324-b34035636cb9</setting>
+        <setting name="source">../codelists/Natura2000DesignationValue.xml</setting>
+        <setting name="charset">UTF-8</setting>
+        <setting name="contentType">eu.esdihumboldt.hale.io.codelist.xml</setting>
+    </resource>
+    <resource action-id="eu.esdihumboldt.hale.codelist.read" provider-id="eu.esdihumboldt.hale.io.codelist.xml.reader">
+        <setting name="resourceId">2c950968-56f8-4475-8a8e-b9c7db95af9c</setting>
+        <setting name="source">../codelists/NationalMonumentsRecordDesignationValue.xml</setting>
+        <setting name="charset">UTF-8</setting>
+        <setting name="contentType">eu.esdihumboldt.hale.io.codelist.xml</setting>
+    </resource>
+    <file name="styles.sld" location="ProtectedSites.halex.styles.sld"/>
+    <file name="alignment.xml" location="ProtectedSites.halex.alignment.xml"/>
+    <complex-property name="codelists">
+        <associations>
+            <codeList identifier="NativenessValue" namespace="urn:x-inspire:specification:gmlas:GeographicalNames:3.0">
+                <entity>
+                    <type name="GeographicalNameType" namespace="urn:x-inspire:specification:gmlas:GeographicalNames:3.0"/>
+                    <property name="nativeness" namespace="urn:x-inspire:specification:gmlas:GeographicalNames:3.0"/>
+                </entity>
+            </codeList>
+            <codeList identifier="NamedPlaceTypeValue" namespace="urn:x-inspire:specification:gmlas:GeographicalNames:3.0">
+                <entity>
+                    <type name="NamedPlaceType" namespace="urn:x-inspire:specification:gmlas:GeographicalNames:3.0"/>
+                    <property name="type" namespace="urn:x-inspire:specification:gmlas:GeographicalNames:3.0"/>
+                </entity>
+            </codeList>
+            <codeList identifier="DesignationValue" namespace="urn:x-inspire:specification:gmlas:ProtectedSites:3.0">
+                <entity>
+                    <type name="DesignationTypeType" namespace="urn:x-inspire:specification:gmlas:ProtectedSites:3.0"/>
+                    <property name="designation" namespace="urn:x-inspire:specification:gmlas:ProtectedSites:3.0"/>
+                </entity>
+            </codeList>
+            <codeList identifier="NameStatusValue" namespace="urn:x-inspire:specification:gmlas:GeographicalNames:3.0">
+                <entity>
+                    <type name="GeographicalNameType" namespace="urn:x-inspire:specification:gmlas:GeographicalNames:3.0"/>
+                    <property name="nameStatus" namespace="urn:x-inspire:specification:gmlas:GeographicalNames:3.0"/>
+                </entity>
+            </codeList>
+            <codeList identifier="DesignationSchemeValue" namespace="urn:x-inspire:specification:gmlas:ProtectedSites:3.0">
+                <entity>
+                    <type name="DesignationTypeType" namespace="urn:x-inspire:specification:gmlas:ProtectedSites:3.0"/>
+                    <property name="designationScheme" namespace="urn:x-inspire:specification:gmlas:ProtectedSites:3.0"/>
+                </entity>
+            </codeList>
+            <codeList identifier="ConditionOfFacilityValue" namespace="urn:x-inspire:specification:gmlas:BaseTypes:3.2">
+                <entity>
+                    <type name="ConditionOfAirFacilityType" namespace="urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0"/>
+                    <property name="currentStatus" namespace="urn:x-inspire:specification:gmlas:CommonTransportElements:3.0"/>
+                </entity>
+            </codeList>
+            <codeList identifier="CadastralZoningLevelValue" namespace="urn:x-inspire:specification:gmlas:CadastralParcels:3.0">
+                <entity>
+                    <type name="CadastralZoningType" namespace="urn:x-inspire:specification:gmlas:CadastralParcels:3.0"/>
+                    <property name="level" namespace="urn:x-inspire:specification:gmlas:CadastralParcels:3.0"/>
+                </entity>
+            </codeList>
+        </associations>
+    </complex-property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:ProtectedSites:3.0}ProtectedSiteType/1">{urn:x-inspire:specification:gmlas:ProtectedSites:3.0}geometry</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:ProtectedSites:3.0}ProtectedSiteType/2">{http://www.opengis.net/gml/3.2/AbstractGeometry}choice</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:ProtectedSites:3.0}ProtectedSiteType/count">2</property>
+</hale-project>

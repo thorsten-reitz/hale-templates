@@ -1,0 +1,784 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<hale-project version="2.7.0.201310041528">
+    <name>Map to INSPIRE Protected Sites Full 3.0</name>
+    <author>Thorsten Reitz</author>
+    <description>Preconfigured with INSPIRE Protected Sites Full as target schema and associated code lists.</description>
+    <created>2013-10-06T10:54:45.717+02:00</created>
+    <modified>2013-10-06T11:25:39.769+02:00</modified>
+    <save-config action-id="project.save" provider-id="eu.esdihumboldt.hale.io.project.hale25.xml.writer">
+        <setting name="projectFiles.separate">false</setting>
+        <setting name="target">file:/C:/Projekte/thorsten/hale-src/hale/util/plugins/eu.esdihumboldt.util.resource.schemas.inspire.annex1/annex1/projects/ProtectedSitesFull.halex</setting>
+        <setting name="charset">UTF-8</setting>
+        <setting name="contentType">eu.esdihumboldt.hale.io.project.hale25.xml</setting>
+    </save-config>
+    <resource action-id="eu.esdihumboldt.hale.codelist.read" provider-id="eu.esdihumboldt.hale.io.codelist.xml.reader">
+        <setting name="resourceId">15b9ec4e-9e70-48fc-8b23-9456e6f56da7</setting>
+        <setting name="source">../codelists/DesignationSchemeValue.xml</setting>
+        <setting name="charset">UTF-8</setting>
+        <setting name="contentType">eu.esdihumboldt.hale.io.codelist.xml</setting>
+    </resource>
+    <resource action-id="eu.esdihumboldt.hale.codelist.read" provider-id="eu.esdihumboldt.hale.io.codelist.xml.reader">
+        <setting name="resourceId">3ab9e649-7d2f-4712-a78d-a57b57082bdb</setting>
+        <setting name="source">../codelists/DesignationValue.xml</setting>
+        <setting name="charset">UTF-8</setting>
+        <setting name="contentType">eu.esdihumboldt.hale.io.codelist.xml</setting>
+    </resource>
+    <resource action-id="eu.esdihumboldt.hale.codelist.read" provider-id="eu.esdihumboldt.hale.io.codelist.xml.reader">
+        <setting name="resourceId">ca3cb100-435d-4385-b4af-b5796c236357</setting>
+        <setting name="source">../codelists/RamsarDesignationValue.xml</setting>
+        <setting name="charset">UTF-8</setting>
+        <setting name="contentType">eu.esdihumboldt.hale.io.codelist.xml</setting>
+    </resource>
+    <resource action-id="eu.esdihumboldt.hale.codelist.read" provider-id="eu.esdihumboldt.hale.io.codelist.xml.reader">
+        <setting name="resourceId">8b383a8e-4c58-4a35-8815-9e75a2a98379</setting>
+        <setting name="source">../codelists/UNESCOManAndBiosphereProgrammeDesignationValue.xml</setting>
+        <setting name="charset">UTF-8</setting>
+        <setting name="contentType">eu.esdihumboldt.hale.io.codelist.xml</setting>
+    </resource>
+    <resource action-id="eu.esdihumboldt.hale.codelist.read" provider-id="eu.esdihumboldt.hale.io.codelist.xml.reader">
+        <setting name="resourceId">ee853e5b-c3b1-4174-bc84-ca0ef17bc8eb</setting>
+        <setting name="source">../codelists/UNESCOWorldHeritageDesignationValue.xml</setting>
+        <setting name="charset">UTF-8</setting>
+        <setting name="contentType">eu.esdihumboldt.hale.io.codelist.xml</setting>
+    </resource>
+    <resource action-id="eu.esdihumboldt.hale.codelist.read" provider-id="eu.esdihumboldt.hale.io.codelist.xml.reader">
+        <setting name="resourceId">0c4d58af-b06b-428d-9c4c-453bbedd571e</setting>
+        <setting name="source">../codelists/EmeraldNetworkDesignationValue.xml</setting>
+        <setting name="charset">UTF-8</setting>
+        <setting name="contentType">eu.esdihumboldt.hale.io.codelist.xml</setting>
+    </resource>
+    <resource action-id="eu.esdihumboldt.hale.codelist.read" provider-id="eu.esdihumboldt.hale.io.codelist.xml.reader">
+        <setting name="resourceId">582a6703-072e-48c7-819d-2fc5ad8cb722</setting>
+        <setting name="source">../codelists/IUCNDesignationValue.xml</setting>
+        <setting name="charset">UTF-8</setting>
+        <setting name="contentType">eu.esdihumboldt.hale.io.codelist.xml</setting>
+    </resource>
+    <resource action-id="eu.esdihumboldt.hale.codelist.read" provider-id="eu.esdihumboldt.hale.io.codelist.xml.reader">
+        <setting name="resourceId">eb147101-59fc-4759-b324-b34035636cb9</setting>
+        <setting name="source">../codelists/Natura2000DesignationValue.xml</setting>
+        <setting name="charset">UTF-8</setting>
+        <setting name="contentType">eu.esdihumboldt.hale.io.codelist.xml</setting>
+    </resource>
+    <resource action-id="eu.esdihumboldt.hale.codelist.read" provider-id="eu.esdihumboldt.hale.io.codelist.xml.reader">
+        <setting name="resourceId">2c950968-56f8-4475-8a8e-b9c7db95af9c</setting>
+        <setting name="source">../codelists/NationalMonumentsRecordDesignationValue.xml</setting>
+        <setting name="charset">UTF-8</setting>
+        <setting name="contentType">eu.esdihumboldt.hale.io.codelist.xml</setting>
+    </resource>
+    <resource action-id="eu.esdihumboldt.hale.io.schema.read.target" provider-id="eu.esdihumboldt.hale.io.xsd.reader">
+        <setting name="resourceId">b537bbe4-ecaa-4164-9e9f-d960d737474a</setting>
+        <setting name="source">../3.0/ProtectedSitesFull.xsd</setting>
+        <setting name="charset">UTF-8</setting>
+        <setting name="contentType">eu.esdihumboldt.hale.io.xsd</setting>
+    </resource>
+    <resource action-id="eu.esdihumboldt.hale.codelist.read" provider-id="eu.esdihumboldt.hale.io.codelist.xml.reader">
+        <setting name="resourceId">f4f6b809-89b6-4465-ba94-f89db09ec9b8</setting>
+        <setting name="source">../codelists/FundingTypeValue.xml</setting>
+        <setting name="charset">UTF-8</setting>
+        <setting name="contentType">eu.esdihumboldt.hale.io.codelist.xml</setting>
+    </resource>
+    <resource action-id="eu.esdihumboldt.hale.codelist.read" provider-id="eu.esdihumboldt.hale.io.codelist.xml.reader">
+        <setting name="resourceId">eef80127-c788-40cd-8059-a7dbff8e4d79</setting>
+        <setting name="source">../codelists/SiteIdentifierSchemeValue.xml</setting>
+        <setting name="charset">UTF-8</setting>
+        <setting name="contentType">eu.esdihumboldt.hale.io.codelist.xml</setting>
+    </resource>
+    <resource action-id="eu.esdihumboldt.hale.codelist.read" provider-id="eu.esdihumboldt.hale.io.codelist.xml.reader">
+        <setting name="resourceId">bf0a9f96-38ec-485f-a50f-bf48b9db4a62</setting>
+        <setting name="source">../codelists/ActivityValue.xml</setting>
+        <setting name="charset">UTF-8</setting>
+        <setting name="contentType">eu.esdihumboldt.hale.io.codelist.xml</setting>
+    </resource>
+    <file name="styles.sld" location="ProtectedSitesFull.halex.styles.sld"/>
+    <file name="alignment.xml" location="ProtectedSitesFull.halex.alignment.xml"/>
+    <complex-property name="codelists">
+        <associations>
+            <codeList identifier="NativenessValue" namespace="urn:x-inspire:specification:gmlas:GeographicalNames:3.0">
+                <entity>
+                    <type name="GeographicalNameType" namespace="urn:x-inspire:specification:gmlas:GeographicalNames:3.0"/>
+                    <property name="nativeness" namespace="urn:x-inspire:specification:gmlas:GeographicalNames:3.0"/>
+                </entity>
+            </codeList>
+            <codeList identifier="NamedPlaceTypeValue" namespace="urn:x-inspire:specification:gmlas:GeographicalNames:3.0">
+                <entity>
+                    <type name="NamedPlaceType" namespace="urn:x-inspire:specification:gmlas:GeographicalNames:3.0"/>
+                    <property name="type" namespace="urn:x-inspire:specification:gmlas:GeographicalNames:3.0"/>
+                </entity>
+            </codeList>
+            <codeList identifier="DesignationValue" namespace="urn:x-inspire:specification:gmlas:ProtectedSites:3.0">
+                <entity>
+                    <type name="DesignationTypeType" namespace="urn:x-inspire:specification:gmlas:ProtectedSites:3.0"/>
+                    <property name="designation" namespace="urn:x-inspire:specification:gmlas:ProtectedSites:3.0"/>
+                </entity>
+            </codeList>
+            <codeList identifier="SiteIdentifierSchemeValue" namespace="urn:x-inspire:specification:gmlas:ProtectedSitesFull:3.0">
+                <entity>
+                    <type name="SiteIdentifierTypeType" namespace="urn:x-inspire:specification:gmlas:ProtectedSitesFull:3.0"/>
+                    <property name="siteIdentifierScheme" namespace="urn:x-inspire:specification:gmlas:ProtectedSitesFull:3.0"/>
+                </entity>
+            </codeList>
+            <codeList identifier="NameStatusValue" namespace="urn:x-inspire:specification:gmlas:GeographicalNames:3.0">
+                <entity>
+                    <type name="GeographicalNameType" namespace="urn:x-inspire:specification:gmlas:GeographicalNames:3.0"/>
+                    <property name="nameStatus" namespace="urn:x-inspire:specification:gmlas:GeographicalNames:3.0"/>
+                </entity>
+            </codeList>
+            <codeList identifier="DesignationSchemeValue" namespace="urn:x-inspire:specification:gmlas:ProtectedSites:3.0">
+                <entity>
+                    <type name="DesignationTypeType" namespace="urn:x-inspire:specification:gmlas:ProtectedSites:3.0"/>
+                    <property name="designationScheme" namespace="urn:x-inspire:specification:gmlas:ProtectedSites:3.0"/>
+                </entity>
+            </codeList>
+            <codeList identifier="ConditionOfFacilityValue" namespace="urn:x-inspire:specification:gmlas:BaseTypes:3.2">
+                <entity>
+                    <type name="ConditionOfAirFacilityType" namespace="urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0"/>
+                    <property name="currentStatus" namespace="urn:x-inspire:specification:gmlas:CommonTransportElements:3.0"/>
+                </entity>
+            </codeList>
+            <codeList identifier="CadastralZoningLevelValue" namespace="urn:x-inspire:specification:gmlas:CadastralParcels:3.0">
+                <entity>
+                    <type name="CadastralZoningType" namespace="urn:x-inspire:specification:gmlas:CadastralParcels:3.0"/>
+                    <property name="level" namespace="urn:x-inspire:specification:gmlas:CadastralParcels:3.0"/>
+                </entity>
+            </codeList>
+            <codeList identifier="FundingTypeValue" namespace="urn:x-inspire:specification:gmlas:ProtectedSitesFull:3.0">
+                <entity>
+                    <type name="FundingSourceTypeType" namespace="urn:x-inspire:specification:gmlas:ProtectedSitesFull:3.0"/>
+                    <property name="fundingType" namespace="urn:x-inspire:specification:gmlas:ProtectedSitesFull:3.0"/>
+                </entity>
+            </codeList>
+        </associations>
+    </complex-property>
+    <property name="defaultGeometry:{http://www.isotc211.org/2005/gmd}EX_BoundingPolygon_Type/1">{http://www.isotc211.org/2005/gmd}polygon</property>
+    <property name="defaultGeometry:{http://www.isotc211.org/2005/gmd}EX_BoundingPolygon_Type/2">{http://www.opengis.net/gml/3.2/AbstractGeometry}choice</property>
+    <property name="defaultGeometry:{http://www.isotc211.org/2005/gmd}EX_BoundingPolygon_Type/count">2</property>
+    <property name="defaultGeometry:{http://www.isotc211.org/2005/gmd}EX_Extent_Type/1">{http://www.isotc211.org/2005/gmd}geographicElement</property>
+    <property name="defaultGeometry:{http://www.isotc211.org/2005/gmd}EX_Extent_Type/2">{http://www.isotc211.org/2005/gmd/AbstractEX_GeographicExtent}choice</property>
+    <property name="defaultGeometry:{http://www.isotc211.org/2005/gmd}EX_Extent_Type/3">{http://www.isotc211.org/2005/gmd}EX_BoundingPolygon</property>
+    <property name="defaultGeometry:{http://www.isotc211.org/2005/gmd}EX_Extent_Type/4">{http://www.isotc211.org/2005/gmd}polygon</property>
+    <property name="defaultGeometry:{http://www.isotc211.org/2005/gmd}EX_Extent_Type/5">{http://www.opengis.net/gml/3.2/AbstractGeometry}choice</property>
+    <property name="defaultGeometry:{http://www.isotc211.org/2005/gmd}EX_Extent_Type/count">5</property>
+    <property name="defaultGeometry:{http://www.isotc211.org/2005/gmd}EX_SpatialTemporalExtent_Type/1">{http://www.isotc211.org/2005/gmd}spatialExtent</property>
+    <property name="defaultGeometry:{http://www.isotc211.org/2005/gmd}EX_SpatialTemporalExtent_Type/2">{http://www.isotc211.org/2005/gmd/AbstractEX_GeographicExtent}choice</property>
+    <property name="defaultGeometry:{http://www.isotc211.org/2005/gmd}EX_SpatialTemporalExtent_Type/3">{http://www.isotc211.org/2005/gmd}EX_BoundingPolygon</property>
+    <property name="defaultGeometry:{http://www.isotc211.org/2005/gmd}EX_SpatialTemporalExtent_Type/4">{http://www.isotc211.org/2005/gmd}polygon</property>
+    <property name="defaultGeometry:{http://www.isotc211.org/2005/gmd}EX_SpatialTemporalExtent_Type/5">{http://www.opengis.net/gml/3.2/AbstractGeometry}choice</property>
+    <property name="defaultGeometry:{http://www.isotc211.org/2005/gmd}EX_SpatialTemporalExtent_Type/count">5</property>
+    <property name="defaultGeometry:{http://www.isotc211.org/2005/gmd}MD_Georectified_Type/1">{http://www.isotc211.org/2005/gmd}cornerPoints</property>
+    <property name="defaultGeometry:{http://www.isotc211.org/2005/gmd}MD_Georectified_Type/2">{http://www.opengis.net/gml/3.2}Point</property>
+    <property name="defaultGeometry:{http://www.isotc211.org/2005/gmd}MD_Georectified_Type/count">2</property>
+    <property name="defaultGeometry:{http://www.isotc211.org/2005/gmd}MD_Metadata_Type/1">{http://www.isotc211.org/2005/gmd}spatialRepresentationInfo</property>
+    <property name="defaultGeometry:{http://www.isotc211.org/2005/gmd}MD_Metadata_Type/2">{http://www.isotc211.org/2005/gmd/AbstractMD_SpatialRepresentation}choice</property>
+    <property name="defaultGeometry:{http://www.isotc211.org/2005/gmd}MD_Metadata_Type/3">{http://www.isotc211.org/2005/gmd}MD_Georectified</property>
+    <property name="defaultGeometry:{http://www.isotc211.org/2005/gmd}MD_Metadata_Type/4">{http://www.isotc211.org/2005/gmd}cornerPoints</property>
+    <property name="defaultGeometry:{http://www.isotc211.org/2005/gmd}MD_Metadata_Type/5">{http://www.opengis.net/gml/3.2}Point</property>
+    <property name="defaultGeometry:{http://www.isotc211.org/2005/gmd}MD_Metadata_Type/count">5</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}AbstractContinuousCoverageType/1">{http://www.opengis.net/gml/3.2}boundedBy</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}AbstractContinuousCoverageType/2">{http://www.opengis.net/gml/3.2/BoundingShapeType}choice_1</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}AbstractContinuousCoverageType/count">2</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}AbstractCoverageType/1">{http://www.opengis.net/gml/3.2}boundedBy</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}AbstractCoverageType/2">{http://www.opengis.net/gml/3.2/BoundingShapeType}choice_1</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}AbstractCoverageType/count">2</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}AbstractFeatureCollectionType/1">{http://www.opengis.net/gml/3.2}boundedBy</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}AbstractFeatureCollectionType/2">{http://www.opengis.net/gml/3.2/BoundingShapeType}choice_1</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}AbstractFeatureCollectionType/count">2</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}AbstractFeatureType/1">{http://www.opengis.net/gml/3.2}boundedBy</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}AbstractFeatureType/2">{http://www.opengis.net/gml/3.2/BoundingShapeType}choice_1</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}AbstractFeatureType/count">2</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}AbstractGriddedSurfaceType/1">{http://www.opengis.net/gml/3.2}rows</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}AbstractGriddedSurfaceType/2">{http://www.opengis.net/gml/3.2}Row</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}AbstractGriddedSurfaceType/3">{f4a4e947-bc08-4644-b507-0f84a99fdc30}choice_1</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}AbstractGriddedSurfaceType/4">{0a8ace50-2f11-4c1a-82b3-fd78ed00136f}choice_1</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}AbstractGriddedSurfaceType/5">{http://www.opengis.net/gml/3.2}pointProperty</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}AbstractGriddedSurfaceType/6">{http://www.opengis.net/gml/3.2}Point</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}AbstractGriddedSurfaceType/count">6</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}AbstractRingPropertyType/1">{http://www.opengis.net/gml/3.2/AbstractRing}choice</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}AbstractRingPropertyType/count">1</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}ArcByBulgeType/1">{http://www.opengis.net/gml/3.2/ArcByBulgeType}choice_1</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}ArcByBulgeType/2">{http://www.opengis.net/gml/3.2/ArcByBulgeType/choice_1}choice_1</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}ArcByBulgeType/3">{http://www.opengis.net/gml/3.2}pointProperty</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}ArcByBulgeType/4">{http://www.opengis.net/gml/3.2}Point</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}ArcByBulgeType/count">4</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}ArcByCenterPointType/1">{http://www.opengis.net/gml/3.2/ArcByCenterPointType}choice_1</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}ArcByCenterPointType/2">{http://www.opengis.net/gml/3.2/ArcByCenterPointType/choice_1}choice_1</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}ArcByCenterPointType/3">{http://www.opengis.net/gml/3.2}pointProperty</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}ArcByCenterPointType/4">{http://www.opengis.net/gml/3.2}Point</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}ArcByCenterPointType/count">4</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}ArcStringByBulgeType/1">{http://www.opengis.net/gml/3.2/ArcStringByBulgeType}choice_1</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}ArcStringByBulgeType/2">{http://www.opengis.net/gml/3.2/ArcStringByBulgeType/choice_1}choice_1</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}ArcStringByBulgeType/3">{http://www.opengis.net/gml/3.2}pointProperty</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}ArcStringByBulgeType/4">{http://www.opengis.net/gml/3.2}Point</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}ArcStringByBulgeType/count">4</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}ArcStringType/1">{http://www.opengis.net/gml/3.2/ArcStringType}choice_1</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}ArcStringType/2">{http://www.opengis.net/gml/3.2/ArcStringType/choice_1}choice_1</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}ArcStringType/3">{http://www.opengis.net/gml/3.2}pointProperty</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}ArcStringType/4">{http://www.opengis.net/gml/3.2}Point</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}ArcStringType/count">4</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}ArcType/1">{http://www.opengis.net/gml/3.2/ArcType}choice_1</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}ArcType/2">{http://www.opengis.net/gml/3.2/ArcType/choice_1}choice_1</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}ArcType/3">{http://www.opengis.net/gml/3.2}pointProperty</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}ArcType/4">{http://www.opengis.net/gml/3.2}Point</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}ArcType/count">4</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}ArrayAssociationType/1">{http://www.opengis.net/gml/3.2/AbstractObject}choice</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}ArrayAssociationType/count">1</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}ArrayType/1">{http://www.opengis.net/gml/3.2}members</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}ArrayType/2">{http://www.opengis.net/gml/3.2/AbstractObject}choice</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}ArrayType/count">2</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}BSplineType/1">{http://www.opengis.net/gml/3.2/BSplineType}choice_1</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}BSplineType/2">{http://www.opengis.net/gml/3.2/BSplineType/choice_1}choice_1</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}BSplineType/3">{http://www.opengis.net/gml/3.2}pointProperty</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}BSplineType/4">{http://www.opengis.net/gml/3.2}Point</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}BSplineType/count">4</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}BagType/1">{http://www.opengis.net/gml/3.2}members</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}BagType/2">{http://www.opengis.net/gml/3.2/AbstractObject}choice</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}BagType/count">2</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}BezierType/1">{http://www.opengis.net/gml/3.2/BezierType}choice_1</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}BezierType/2">{http://www.opengis.net/gml/3.2/BezierType/choice_1}choice_1</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}BezierType/3">{http://www.opengis.net/gml/3.2}pointProperty</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}BezierType/4">{http://www.opengis.net/gml/3.2}Point</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}BezierType/count">4</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}BoundedFeatureType/1">{http://www.opengis.net/gml/3.2}boundedBy</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}BoundedFeatureType/2">{http://www.opengis.net/gml/3.2/BoundingShapeType}choice_1</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}BoundedFeatureType/count">2</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}BoundingShapeType/1">{http://www.opengis.net/gml/3.2/BoundingShapeType}choice_1</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}BoundingShapeType/count">1</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}CircleByCenterPointType/1">{http://www.opengis.net/gml/3.2/CircleByCenterPointType}choice_1</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}CircleByCenterPointType/2">{http://www.opengis.net/gml/3.2/CircleByCenterPointType/choice_1}choice_1</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}CircleByCenterPointType/3">{http://www.opengis.net/gml/3.2}pointProperty</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}CircleByCenterPointType/4">{http://www.opengis.net/gml/3.2}Point</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}CircleByCenterPointType/count">4</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}CircleType/1">{http://www.opengis.net/gml/3.2/ArcStringType}choice_1</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}CircleType/2">{http://www.opengis.net/gml/3.2/ArcStringType/choice_1}choice_1</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}CircleType/3">{http://www.opengis.net/gml/3.2}pointProperty</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}CircleType/4">{http://www.opengis.net/gml/3.2}Point</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}CircleType/count">4</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}CompositeCurveType/1">{http://www.opengis.net/gml/3.2}curveMember</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}CompositeCurveType/2">{http://www.opengis.net/gml/3.2/AbstractCurve}choice</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}CompositeCurveType/count">2</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}CompositeSolidType/1">{http://www.opengis.net/gml/3.2}solidMember</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}CompositeSolidType/2">{http://www.opengis.net/gml/3.2/AbstractSolid}choice</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}CompositeSolidType/count">2</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}CompositeSurfaceType/1">{http://www.opengis.net/gml/3.2}surfaceMember</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}CompositeSurfaceType/2">{http://www.opengis.net/gml/3.2/AbstractSurface}choice</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}CompositeSurfaceType/count">2</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}CompositeValueType/1">{http://www.opengis.net/gml/3.2}valueComponent</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}CompositeValueType/2">{151fac02-e66e-48f5-a19d-6f47e58d61db}choice_1</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}CompositeValueType/count">2</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}ConeType/1">{http://www.opengis.net/gml/3.2}rows</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}ConeType/2">{http://www.opengis.net/gml/3.2}Row</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}ConeType/3">{f4a4e947-bc08-4644-b507-0f84a99fdc30}choice_1</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}ConeType/4">{0a8ace50-2f11-4c1a-82b3-fd78ed00136f}choice_1</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}ConeType/5">{http://www.opengis.net/gml/3.2}pointProperty</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}ConeType/6">{http://www.opengis.net/gml/3.2}Point</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}ConeType/count">6</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}CubicSplineType/1">{http://www.opengis.net/gml/3.2/CubicSplineType}choice_1</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}CubicSplineType/2">{http://www.opengis.net/gml/3.2/CubicSplineType/choice_1}choice_1</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}CubicSplineType/3">{http://www.opengis.net/gml/3.2}pointProperty</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}CubicSplineType/4">{http://www.opengis.net/gml/3.2}Point</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}CubicSplineType/count">4</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}CurveArrayPropertyType/1">{http://www.opengis.net/gml/3.2/AbstractCurve}choice</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}CurveArrayPropertyType/count">1</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}CurvePropertyType/1">{http://www.opengis.net/gml/3.2/AbstractCurve}choice</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}CurvePropertyType/count">1</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}CurveSegmentArrayPropertyType/1">{http://www.opengis.net/gml/3.2/AbstractCurveSegment}choice</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}CurveSegmentArrayPropertyType/count">1</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}CurveType/1">{http://www.opengis.net/gml/3.2}segments</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}CurveType/2">{http://www.opengis.net/gml/3.2/AbstractCurveSegment}choice</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}CurveType/count">2</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}CylinderType/1">{http://www.opengis.net/gml/3.2}rows</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}CylinderType/2">{http://www.opengis.net/gml/3.2}Row</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}CylinderType/3">{f4a4e947-bc08-4644-b507-0f84a99fdc30}choice_1</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}CylinderType/4">{0a8ace50-2f11-4c1a-82b3-fd78ed00136f}choice_1</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}CylinderType/5">{http://www.opengis.net/gml/3.2}pointProperty</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}CylinderType/6">{http://www.opengis.net/gml/3.2}Point</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}CylinderType/count">6</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}DirectedEdgePropertyType/1">{http://www.opengis.net/gml/3.2}Edge</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}DirectedEdgePropertyType/2">{http://www.opengis.net/gml/3.2}curveProperty</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}DirectedEdgePropertyType/3">{http://www.opengis.net/gml/3.2/AbstractCurve}choice</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}DirectedEdgePropertyType/count">3</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}DirectedFacePropertyType/1">{http://www.opengis.net/gml/3.2}Face</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}DirectedFacePropertyType/2">{http://www.opengis.net/gml/3.2}surfaceProperty</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}DirectedFacePropertyType/3">{http://www.opengis.net/gml/3.2/AbstractSurface}choice</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}DirectedFacePropertyType/count">3</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}DirectedNodePropertyType/1">{http://www.opengis.net/gml/3.2}Node</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}DirectedNodePropertyType/2">{http://www.opengis.net/gml/3.2}pointProperty</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}DirectedNodePropertyType/3">{http://www.opengis.net/gml/3.2}Point</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}DirectedNodePropertyType/count">3</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}DirectedObservationAtDistanceType/1">{http://www.opengis.net/gml/3.2}boundedBy</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}DirectedObservationAtDistanceType/2">{http://www.opengis.net/gml/3.2/BoundingShapeType}choice_1</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}DirectedObservationAtDistanceType/count">2</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}DirectedObservationType/1">{http://www.opengis.net/gml/3.2}boundedBy</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}DirectedObservationType/2">{http://www.opengis.net/gml/3.2/BoundingShapeType}choice_1</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}DirectedObservationType/count">2</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}DirectedTopoSolidPropertyType/1">{http://www.opengis.net/gml/3.2}TopoSolid</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}DirectedTopoSolidPropertyType/2">{http://www.opengis.net/gml/3.2}solidProperty</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}DirectedTopoSolidPropertyType/3">{http://www.opengis.net/gml/3.2/AbstractSolid}choice</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}DirectedTopoSolidPropertyType/count">3</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}DiscreteCoverageType/1">{http://www.opengis.net/gml/3.2}boundedBy</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}DiscreteCoverageType/2">{http://www.opengis.net/gml/3.2/BoundingShapeType}choice_1</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}DiscreteCoverageType/count">2</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}DomainSetType/1">{http://www.opengis.net/gml/3.2/DomainSetType/sequence_1}choice_1</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}DomainSetType/count">1</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}DynamicFeatureCollectionType/1">{http://www.opengis.net/gml/3.2}boundedBy</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}DynamicFeatureCollectionType/2">{http://www.opengis.net/gml/3.2/BoundingShapeType}choice_1</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}DynamicFeatureCollectionType/count">2</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}DynamicFeatureMemberType/1">{http://www.opengis.net/gml/3.2/DynamicFeature}choice</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}DynamicFeatureMemberType/2">{http://www.opengis.net/gml/3.2}DynamicFeature</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}DynamicFeatureMemberType/3">{http://www.opengis.net/gml/3.2}boundedBy</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}DynamicFeatureMemberType/4">{http://www.opengis.net/gml/3.2/BoundingShapeType}choice_1</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}DynamicFeatureMemberType/count">4</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}DynamicFeatureType/1">{http://www.opengis.net/gml/3.2}boundedBy</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}DynamicFeatureType/2">{http://www.opengis.net/gml/3.2/BoundingShapeType}choice_1</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}DynamicFeatureType/count">2</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}EdgeType/1">{http://www.opengis.net/gml/3.2}curveProperty</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}EdgeType/2">{http://www.opengis.net/gml/3.2/AbstractCurve}choice</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}EdgeType/count">2</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}FaceType/1">{http://www.opengis.net/gml/3.2}surfaceProperty</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}FaceType/2">{http://www.opengis.net/gml/3.2/AbstractSurface}choice</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}FaceType/count">2</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}FeatureArrayPropertyType/1">{http://www.opengis.net/gml/3.2/AbstractFeature}choice</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}FeatureArrayPropertyType/2">{urn:x-inspire:specification:gmlas:BiogeographicalRegions:0.0}Bio-GeographicalRegion</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}FeatureArrayPropertyType/3">{urn:x-inspire:specification:gmlas:BiogeographicalRegions:0.0}geometry</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}FeatureArrayPropertyType/4">{http://www.opengis.net/gml/3.2}MultiSurface</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}FeatureArrayPropertyType/count">4</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}FeatureCollectionType/1">{http://www.opengis.net/gml/3.2}boundedBy</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}FeatureCollectionType/2">{http://www.opengis.net/gml/3.2/BoundingShapeType}choice_1</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}FeatureCollectionType/count">2</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}FeaturePropertyType/1">{http://www.opengis.net/gml/3.2/AbstractFeature}choice</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}FeaturePropertyType/2">{urn:x-inspire:specification:gmlas:BiogeographicalRegions:0.0}Bio-GeographicalRegion</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}FeaturePropertyType/3">{urn:x-inspire:specification:gmlas:BiogeographicalRegions:0.0}geometry</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}FeaturePropertyType/4">{http://www.opengis.net/gml/3.2}MultiSurface</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}FeaturePropertyType/count">4</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}GeodesicStringType/1">{http://www.opengis.net/gml/3.2/GeodesicStringType}choice_1</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}GeodesicStringType/2">{0a8ace50-2f11-4c1a-82b3-fd78ed00136f}choice_1</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}GeodesicStringType/3">{http://www.opengis.net/gml/3.2}pointProperty</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}GeodesicStringType/4">{http://www.opengis.net/gml/3.2}Point</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}GeodesicStringType/count">4</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}GeodesicType/1">{http://www.opengis.net/gml/3.2/GeodesicStringType}choice_1</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}GeodesicType/2">{0a8ace50-2f11-4c1a-82b3-fd78ed00136f}choice_1</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}GeodesicType/3">{http://www.opengis.net/gml/3.2}pointProperty</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}GeodesicType/4">{http://www.opengis.net/gml/3.2}Point</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}GeodesicType/count">4</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}GeometricComplexType/1">{http://www.opengis.net/gml/3.2}element</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}GeometricComplexType/2">{http://www.opengis.net/gml/3.2/AbstractGeometricPrimitive}choice</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}GeometricComplexType/count">2</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}GeometryArrayPropertyType/1">{http://www.opengis.net/gml/3.2/AbstractGeometry}choice</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}GeometryArrayPropertyType/count">1</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}GeometryPropertyType/1">{http://www.opengis.net/gml/3.2/AbstractGeometry}choice</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}GeometryPropertyType/count">1</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}HistoryPropertyType/1">{http://www.opengis.net/gml/3.2}MovingObjectStatus</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}HistoryPropertyType/2">{http://www.opengis.net/gml/3.2/MovingObjectStatusType}choice_1</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}HistoryPropertyType/3">{http://www.opengis.net/gml/3.2}position</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}HistoryPropertyType/4">{http://www.opengis.net/gml/3.2/AbstractGeometry}choice</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}HistoryPropertyType/count">4</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}LineStringSegmentType/1">{http://www.opengis.net/gml/3.2/LineStringSegmentType}choice_1</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}LineStringSegmentType/2">{http://www.opengis.net/gml/3.2/LineStringSegmentType/choice_1}choice_1</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}LineStringSegmentType/3">{http://www.opengis.net/gml/3.2}pointProperty</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}LineStringSegmentType/4">{http://www.opengis.net/gml/3.2}Point</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}LineStringSegmentType/count">4</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}LineStringType/1">{http://www.opengis.net/gml/3.2/LineStringType}choice_1</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}LineStringType/2">{http://www.opengis.net/gml/3.2/LineStringType/choice_1}choice_1</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}LineStringType/3">{http://www.opengis.net/gml/3.2}pointProperty</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}LineStringType/4">{http://www.opengis.net/gml/3.2}Point</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}LineStringType/count">4</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}LinearRingType/1">{http://www.opengis.net/gml/3.2/LinearRingType}choice_1</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}LinearRingType/2">{http://www.opengis.net/gml/3.2/LinearRingType/choice_1}choice_1</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}LinearRingType/3">{http://www.opengis.net/gml/3.2}pointProperty</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}LinearRingType/4">{http://www.opengis.net/gml/3.2}Point</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}LinearRingType/count">4</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}LocationPropertyType/1">{http://www.opengis.net/gml/3.2/LocationPropertyType}choice_1</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}LocationPropertyType/count">1</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}MovingObjectStatusType/1">{http://www.opengis.net/gml/3.2/MovingObjectStatusType}choice_1</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}MovingObjectStatusType/2">{http://www.opengis.net/gml/3.2}position</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}MovingObjectStatusType/3">{http://www.opengis.net/gml/3.2/AbstractGeometry}choice</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}MovingObjectStatusType/count">3</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}MultiCurvePropertyType/1">{http://www.opengis.net/gml/3.2}MultiCurve</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}MultiCurvePropertyType/count">1</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}MultiCurveType/1">{http://www.opengis.net/gml/3.2}curveMember</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}MultiCurveType/2">{http://www.opengis.net/gml/3.2/AbstractCurve}choice</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}MultiCurveType/count">2</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}MultiGeometryPropertyType/1">{http://www.opengis.net/gml/3.2/AbstractGeometricAggregate}choice</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}MultiGeometryPropertyType/count">1</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}MultiGeometryType/1">{http://www.opengis.net/gml/3.2}geometryMember</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}MultiGeometryType/2">{http://www.opengis.net/gml/3.2/AbstractGeometry}choice</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}MultiGeometryType/count">2</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}MultiPointPropertyType/1">{http://www.opengis.net/gml/3.2}MultiPoint</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}MultiPointPropertyType/count">1</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}MultiPointType/1">{http://www.opengis.net/gml/3.2}pointMember</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}MultiPointType/2">{http://www.opengis.net/gml/3.2}Point</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}MultiPointType/count">2</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}MultiSolidPropertyType/1">{http://www.opengis.net/gml/3.2}MultiSolid</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}MultiSolidPropertyType/count">1</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}MultiSolidType/1">{http://www.opengis.net/gml/3.2}solidMember</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}MultiSolidType/2">{http://www.opengis.net/gml/3.2/AbstractSolid}choice</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}MultiSolidType/count">2</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}MultiSurfacePropertyType/1">{http://www.opengis.net/gml/3.2}MultiSurface</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}MultiSurfacePropertyType/count">1</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}MultiSurfaceType/1">{http://www.opengis.net/gml/3.2}surfaceMember</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}MultiSurfaceType/2">{http://www.opengis.net/gml/3.2/AbstractSurface}choice</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}MultiSurfaceType/count">2</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}NodeType/1">{http://www.opengis.net/gml/3.2}pointProperty</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}NodeType/2">{http://www.opengis.net/gml/3.2}Point</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}NodeType/count">2</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}ObservationType/1">{http://www.opengis.net/gml/3.2}boundedBy</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}ObservationType/2">{http://www.opengis.net/gml/3.2/BoundingShapeType}choice_1</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}ObservationType/count">2</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}OffsetCurveType/1">{http://www.opengis.net/gml/3.2}offsetBase</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}OffsetCurveType/2">{http://www.opengis.net/gml/3.2/AbstractCurve}choice</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}OffsetCurveType/count">2</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}OrientableCurveType/1">{http://www.opengis.net/gml/3.2}baseCurve</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}OrientableCurveType/2">{http://www.opengis.net/gml/3.2/AbstractCurve}choice</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}OrientableCurveType/count">2</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}OrientableSurfaceType/1">{http://www.opengis.net/gml/3.2}baseSurface</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}OrientableSurfaceType/2">{http://www.opengis.net/gml/3.2/AbstractSurface}choice</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}OrientableSurfaceType/count">2</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}PointArrayPropertyType/1">{http://www.opengis.net/gml/3.2}Point</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}PointArrayPropertyType/count">1</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}PointPropertyType/1">{http://www.opengis.net/gml/3.2}Point</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}PointPropertyType/count">1</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}PolygonPatchType/1">{http://www.opengis.net/gml/3.2}exterior</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}PolygonPatchType/2">{http://www.opengis.net/gml/3.2/AbstractRing}choice</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}PolygonPatchType/count">2</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}PolygonType/1">{http://www.opengis.net/gml/3.2}exterior</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}PolygonType/2">{http://www.opengis.net/gml/3.2/AbstractRing}choice</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}PolygonType/count">2</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}PriorityLocationPropertyType/1">{http://www.opengis.net/gml/3.2/LocationPropertyType}choice_1</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}PriorityLocationPropertyType/count">1</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}ProcedurePropertyType/1">{http://www.opengis.net/gml/3.2/AbstractFeature}choice</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}ProcedurePropertyType/2">{urn:x-inspire:specification:gmlas:BiogeographicalRegions:0.0}Bio-GeographicalRegion</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}ProcedurePropertyType/3">{urn:x-inspire:specification:gmlas:BiogeographicalRegions:0.0}geometry</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}ProcedurePropertyType/4">{http://www.opengis.net/gml/3.2}MultiSurface</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}ProcedurePropertyType/count">4</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}RangeSetType/1">{http://www.opengis.net/gml/3.2/RangeSetType}choice_1</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}RangeSetType/2">{http://www.opengis.net/gml/3.2}ValueArray</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}RangeSetType/3">{http://www.opengis.net/gml/3.2}valueComponent</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}RangeSetType/4">{151fac02-e66e-48f5-a19d-6f47e58d61db}choice_1</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}RangeSetType/count">4</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}RectangleType/1">{http://www.opengis.net/gml/3.2}exterior</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}RectangleType/2">{http://www.opengis.net/gml/3.2/AbstractRing}choice</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}RectangleType/count">2</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}RectifiedGridType/1">{http://www.opengis.net/gml/3.2}origin</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}RectifiedGridType/2">{http://www.opengis.net/gml/3.2}Point</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}RectifiedGridType/count">2</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}RingType/1">{http://www.opengis.net/gml/3.2}curveMember</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}RingType/2">{http://www.opengis.net/gml/3.2/AbstractCurve}choice</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}RingType/count">2</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}ShellType/1">{http://www.opengis.net/gml/3.2}surfaceMember</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}ShellType/2">{http://www.opengis.net/gml/3.2/AbstractSurface}choice</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}ShellType/count">2</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}SolidArrayPropertyType/1">{http://www.opengis.net/gml/3.2/AbstractSolid}choice</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}SolidArrayPropertyType/count">1</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}SolidPropertyType/1">{http://www.opengis.net/gml/3.2/AbstractSolid}choice</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}SolidPropertyType/count">1</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}SolidType/1">{http://www.opengis.net/gml/3.2}exterior</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}SolidType/2">{http://www.opengis.net/gml/3.2}Shell</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}SolidType/3">{http://www.opengis.net/gml/3.2}surfaceMember</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}SolidType/4">{http://www.opengis.net/gml/3.2/AbstractSurface}choice</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}SolidType/count">4</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}SphereType/1">{http://www.opengis.net/gml/3.2}rows</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}SphereType/2">{http://www.opengis.net/gml/3.2}Row</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}SphereType/3">{f4a4e947-bc08-4644-b507-0f84a99fdc30}choice_1</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}SphereType/4">{0a8ace50-2f11-4c1a-82b3-fd78ed00136f}choice_1</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}SphereType/5">{http://www.opengis.net/gml/3.2}pointProperty</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}SphereType/6">{http://www.opengis.net/gml/3.2}Point</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}SphereType/count">6</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}SurfaceArrayPropertyType/1">{http://www.opengis.net/gml/3.2/AbstractSurface}choice</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}SurfaceArrayPropertyType/count">1</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}SurfacePatchArrayPropertyType/1">{http://www.opengis.net/gml/3.2/AbstractSurfacePatch}choice</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}SurfacePatchArrayPropertyType/count">1</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}SurfacePropertyType/1">{http://www.opengis.net/gml/3.2/AbstractSurface}choice</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}SurfacePropertyType/count">1</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}SurfaceType/1">{http://www.opengis.net/gml/3.2/patches}choice</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}SurfaceType/2">{http://www.opengis.net/gml/3.2}patches</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}SurfaceType/3">{http://www.opengis.net/gml/3.2/AbstractSurfacePatch}choice</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}SurfaceType/count">3</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}TargetPropertyType/1">{http://www.opengis.net/gml/3.2/TargetPropertyType}choice_1</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}TargetPropertyType/count">1</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}TinType/1">{http://www.opengis.net/gml/3.2}stopLines</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}TinType/2">{http://www.opengis.net/gml/3.2}LineStringSegment</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}TinType/count">2</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}TopoComplexPropertyType/1">{http://www.opengis.net/gml/3.2}TopoComplex</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}TopoComplexPropertyType/2">{http://www.opengis.net/gml/3.2}topoPrimitiveMember</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}TopoComplexPropertyType/3">{http://www.opengis.net/gml/3.2/AbstractTopoPrimitive}choice</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}TopoComplexPropertyType/4">{http://www.opengis.net/gml/3.2}Node</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}TopoComplexPropertyType/5">{http://www.opengis.net/gml/3.2}pointProperty</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}TopoComplexPropertyType/6">{http://www.opengis.net/gml/3.2}Point</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}TopoComplexPropertyType/count">6</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}TopoComplexType/1">{http://www.opengis.net/gml/3.2}topoPrimitiveMember</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}TopoComplexType/2">{http://www.opengis.net/gml/3.2/AbstractTopoPrimitive}choice</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}TopoComplexType/3">{http://www.opengis.net/gml/3.2}Node</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}TopoComplexType/4">{http://www.opengis.net/gml/3.2}pointProperty</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}TopoComplexType/5">{http://www.opengis.net/gml/3.2}Point</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}TopoComplexType/count">5</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}TopoCurvePropertyType/1">{http://www.opengis.net/gml/3.2}TopoCurve</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}TopoCurvePropertyType/2">{http://www.opengis.net/gml/3.2}directedEdge</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}TopoCurvePropertyType/3">{http://www.opengis.net/gml/3.2}Edge</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}TopoCurvePropertyType/4">{http://www.opengis.net/gml/3.2}curveProperty</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}TopoCurvePropertyType/5">{http://www.opengis.net/gml/3.2/AbstractCurve}choice</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}TopoCurvePropertyType/count">5</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}TopoCurveType/1">{http://www.opengis.net/gml/3.2}directedEdge</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}TopoCurveType/2">{http://www.opengis.net/gml/3.2}Edge</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}TopoCurveType/3">{http://www.opengis.net/gml/3.2}curveProperty</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}TopoCurveType/4">{http://www.opengis.net/gml/3.2/AbstractCurve}choice</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}TopoCurveType/count">4</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}TopoPointPropertyType/1">{http://www.opengis.net/gml/3.2}TopoPoint</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}TopoPointPropertyType/2">{http://www.opengis.net/gml/3.2}directedNode</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}TopoPointPropertyType/3">{http://www.opengis.net/gml/3.2}Node</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}TopoPointPropertyType/4">{http://www.opengis.net/gml/3.2}pointProperty</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}TopoPointPropertyType/5">{http://www.opengis.net/gml/3.2}Point</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}TopoPointPropertyType/count">5</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}TopoPointType/1">{http://www.opengis.net/gml/3.2}directedNode</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}TopoPointType/2">{http://www.opengis.net/gml/3.2}Node</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}TopoPointType/3">{http://www.opengis.net/gml/3.2}pointProperty</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}TopoPointType/4">{http://www.opengis.net/gml/3.2}Point</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}TopoPointType/count">4</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}TopoPrimitiveArrayAssociationType/1">{http://www.opengis.net/gml/3.2/AbstractTopoPrimitive}choice</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}TopoPrimitiveArrayAssociationType/2">{http://www.opengis.net/gml/3.2}Node</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}TopoPrimitiveArrayAssociationType/3">{http://www.opengis.net/gml/3.2}pointProperty</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}TopoPrimitiveArrayAssociationType/4">{http://www.opengis.net/gml/3.2}Point</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}TopoPrimitiveArrayAssociationType/count">4</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}TopoPrimitiveMemberType/1">{http://www.opengis.net/gml/3.2/AbstractTopoPrimitive}choice</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}TopoPrimitiveMemberType/2">{http://www.opengis.net/gml/3.2}Node</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}TopoPrimitiveMemberType/3">{http://www.opengis.net/gml/3.2}pointProperty</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}TopoPrimitiveMemberType/4">{http://www.opengis.net/gml/3.2}Point</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}TopoPrimitiveMemberType/count">4</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}TopoSolidType/1">{http://www.opengis.net/gml/3.2}solidProperty</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}TopoSolidType/2">{http://www.opengis.net/gml/3.2/AbstractSolid}choice</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}TopoSolidType/count">2</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}TopoSurfacePropertyType/1">{http://www.opengis.net/gml/3.2}TopoSurface</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}TopoSurfacePropertyType/2">{http://www.opengis.net/gml/3.2}directedFace</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}TopoSurfacePropertyType/3">{http://www.opengis.net/gml/3.2}Face</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}TopoSurfacePropertyType/4">{http://www.opengis.net/gml/3.2}surfaceProperty</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}TopoSurfacePropertyType/5">{http://www.opengis.net/gml/3.2/AbstractSurface}choice</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}TopoSurfacePropertyType/count">5</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}TopoSurfaceType/1">{http://www.opengis.net/gml/3.2}directedFace</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}TopoSurfaceType/2">{http://www.opengis.net/gml/3.2}Face</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}TopoSurfaceType/3">{http://www.opengis.net/gml/3.2}surfaceProperty</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}TopoSurfaceType/4">{http://www.opengis.net/gml/3.2/AbstractSurface}choice</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}TopoSurfaceType/count">4</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}TopoVolumePropertyType/1">{http://www.opengis.net/gml/3.2}TopoVolume</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}TopoVolumePropertyType/2">{http://www.opengis.net/gml/3.2}directedTopoSolid</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}TopoVolumePropertyType/3">{http://www.opengis.net/gml/3.2}TopoSolid</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}TopoVolumePropertyType/4">{http://www.opengis.net/gml/3.2}solidProperty</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}TopoVolumePropertyType/5">{http://www.opengis.net/gml/3.2/AbstractSolid}choice</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}TopoVolumePropertyType/count">5</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}TopoVolumeType/1">{http://www.opengis.net/gml/3.2}directedTopoSolid</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}TopoVolumeType/2">{http://www.opengis.net/gml/3.2}TopoSolid</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}TopoVolumeType/3">{http://www.opengis.net/gml/3.2}solidProperty</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}TopoVolumeType/4">{http://www.opengis.net/gml/3.2/AbstractSolid}choice</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}TopoVolumeType/count">4</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}TriangleType/1">{http://www.opengis.net/gml/3.2}exterior</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}TriangleType/2">{http://www.opengis.net/gml/3.2/AbstractRing}choice</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}TriangleType/count">2</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}ValueArrayPropertyType/1">{151fac02-e66e-48f5-a19d-6f47e58d61db}choice_1</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}ValueArrayPropertyType/count">1</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}ValueArrayType/1">{http://www.opengis.net/gml/3.2}valueComponent</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}ValueArrayType/2">{151fac02-e66e-48f5-a19d-6f47e58d61db}choice_1</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}ValueArrayType/count">2</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}ValuePropertyType/1">{151fac02-e66e-48f5-a19d-6f47e58d61db}choice_1</property>
+    <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}ValuePropertyType/count">1</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}AerodromeAreaType/1">{urn:x-inspire:specification:gmlas:Network:3.2}geometry</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}AerodromeAreaType/2">{http://www.opengis.net/gml/3.2/AbstractSurface}choice</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}AerodromeAreaType/count">2</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}AerodromeCategoryType/1">{http://www.opengis.net/gml/3.2}boundedBy</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}AerodromeCategoryType/2">{http://www.opengis.net/gml/3.2/BoundingShapeType}choice_1</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}AerodromeCategoryType/count">2</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}AerodromeNodeType/1">{urn:x-inspire:specification:gmlas:Network:3.2}geometry</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}AerodromeNodeType/2">{http://www.opengis.net/gml/3.2}Point</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}AerodromeNodeType/count">2</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}AerodromeTypeType/1">{http://www.opengis.net/gml/3.2}boundedBy</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}AerodromeTypeType/2">{http://www.opengis.net/gml/3.2/BoundingShapeType}choice_1</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}AerodromeTypeType/count">2</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}AirLinkSequenceType/1">{http://www.opengis.net/gml/3.2}boundedBy</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}AirLinkSequenceType/2">{http://www.opengis.net/gml/3.2/BoundingShapeType}choice_1</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}AirLinkSequenceType/count">2</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}AirLinkType/1">{urn:x-inspire:specification:gmlas:Network:3.2}centrelineGeometry</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}AirLinkType/2">{http://www.opengis.net/gml/3.2/AbstractCurve}choice</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}AirLinkType/count">2</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}AirNodeType/1">{urn:x-inspire:specification:gmlas:Network:3.2}geometry</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}AirNodeType/2">{http://www.opengis.net/gml/3.2}Point</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}AirNodeType/count">2</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}AirRouteLinkType/1">{urn:x-inspire:specification:gmlas:Network:3.2}centrelineGeometry</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}AirRouteLinkType/2">{http://www.opengis.net/gml/3.2/AbstractCurve}choice</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}AirRouteLinkType/count">2</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}AirRouteType/1">{http://www.opengis.net/gml/3.2}boundedBy</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}AirRouteType/2">{http://www.opengis.net/gml/3.2/BoundingShapeType}choice_1</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}AirRouteType/count">2</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}AirspaceAreaType/1">{urn:x-inspire:specification:gmlas:Network:3.2}geometry</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}AirspaceAreaType/2">{http://www.opengis.net/gml/3.2/AbstractSurface}choice</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}AirspaceAreaType/count">2</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}ApronAreaType/1">{urn:x-inspire:specification:gmlas:Network:3.2}geometry</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}ApronAreaType/2">{http://www.opengis.net/gml/3.2/AbstractSurface}choice</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}ApronAreaType/count">2</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}ConditionOfAirFacilityType/1">{http://www.opengis.net/gml/3.2}boundedBy</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}ConditionOfAirFacilityType/2">{http://www.opengis.net/gml/3.2/BoundingShapeType}choice_1</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}ConditionOfAirFacilityType/count">2</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}DesignatedPointType/1">{urn:x-inspire:specification:gmlas:Network:3.2}geometry</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}DesignatedPointType/2">{http://www.opengis.net/gml/3.2}Point</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}DesignatedPointType/count">2</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}ElementLengthType/1">{http://www.opengis.net/gml/3.2}boundedBy</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}ElementLengthType/2">{http://www.opengis.net/gml/3.2/BoundingShapeType}choice_1</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}ElementLengthType/count">2</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}ElementWidthType/1">{http://www.opengis.net/gml/3.2}boundedBy</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}ElementWidthType/2">{http://www.opengis.net/gml/3.2/BoundingShapeType}choice_1</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}ElementWidthType/count">2</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}FieldElevationType/1">{http://www.opengis.net/gml/3.2}boundedBy</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}FieldElevationType/2">{http://www.opengis.net/gml/3.2/BoundingShapeType}choice_1</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}FieldElevationType/count">2</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}InstrumentApproachProcedureType/1">{urn:x-inspire:specification:gmlas:Network:3.2}centrelineGeometry</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}InstrumentApproachProcedureType/2">{http://www.opengis.net/gml/3.2/AbstractCurve}choice</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}InstrumentApproachProcedureType/count">2</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}LowerAltitudeLimitType/1">{http://www.opengis.net/gml/3.2}boundedBy</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}LowerAltitudeLimitType/2">{http://www.opengis.net/gml/3.2/BoundingShapeType}choice_1</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}LowerAltitudeLimitType/count">2</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}NavaidType/1">{urn:x-inspire:specification:gmlas:Network:3.2}geometry</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}NavaidType/2">{http://www.opengis.net/gml/3.2}Point</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}NavaidType/count">2</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}ProcedureLinkType/1">{urn:x-inspire:specification:gmlas:Network:3.2}centrelineGeometry</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}ProcedureLinkType/2">{http://www.opengis.net/gml/3.2/AbstractCurve}choice</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}ProcedureLinkType/count">2</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}RunwayAreaType/1">{urn:x-inspire:specification:gmlas:Network:3.2}geometry</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}RunwayAreaType/2">{http://www.opengis.net/gml/3.2/AbstractSurface}choice</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}RunwayAreaType/count">2</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}RunwayCentrelinePointType/1">{urn:x-inspire:specification:gmlas:Network:3.2}geometry</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}RunwayCentrelinePointType/2">{http://www.opengis.net/gml/3.2}Point</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}RunwayCentrelinePointType/count">2</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}StandardInstrumentArrivalType/1">{urn:x-inspire:specification:gmlas:Network:3.2}centrelineGeometry</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}StandardInstrumentArrivalType/2">{http://www.opengis.net/gml/3.2/AbstractCurve}choice</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}StandardInstrumentArrivalType/count">2</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}StandardInstrumentDepartureType/1">{urn:x-inspire:specification:gmlas:Network:3.2}centrelineGeometry</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}StandardInstrumentDepartureType/2">{http://www.opengis.net/gml/3.2/AbstractCurve}choice</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}StandardInstrumentDepartureType/count">2</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}SurfaceCompositionType/1">{http://www.opengis.net/gml/3.2}boundedBy</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}SurfaceCompositionType/2">{http://www.opengis.net/gml/3.2/BoundingShapeType}choice_1</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}SurfaceCompositionType/count">2</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}TaxiwayAreaType/1">{urn:x-inspire:specification:gmlas:Network:3.2}geometry</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}TaxiwayAreaType/2">{http://www.opengis.net/gml/3.2/AbstractSurface}choice</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}TaxiwayAreaType/count">2</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}TouchDownLiftOffType/1">{urn:x-inspire:specification:gmlas:Network:3.2}geometry</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}TouchDownLiftOffType/2">{http://www.opengis.net/gml/3.2}Point</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}TouchDownLiftOffType/count">2</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}UpperAltitudeLimitType/1">{http://www.opengis.net/gml/3.2}boundedBy</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}UpperAltitudeLimitType/2">{http://www.opengis.net/gml/3.2/BoundingShapeType}choice_1</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}UpperAltitudeLimitType/count">2</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}UseRestrictionType/1">{http://www.opengis.net/gml/3.2}boundedBy</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}UseRestrictionType/2">{http://www.opengis.net/gml/3.2/BoundingShapeType}choice_1</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}UseRestrictionType/count">2</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:BaseTypes:3.2}SpatialDataSetType/1">{http://www.opengis.net/gml/3.2}boundedBy</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:BaseTypes:3.2}SpatialDataSetType/2">{http://www.opengis.net/gml/3.2/BoundingShapeType}choice_1</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:BaseTypes:3.2}SpatialDataSetType/count">2</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:BiogeographicalRegions:0.0}Bio-GeographicalRegionType/1">{urn:x-inspire:specification:gmlas:BiogeographicalRegions:0.0}geometry</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:BiogeographicalRegions:0.0}Bio-GeographicalRegionType/2">{http://www.opengis.net/gml/3.2}MultiSurface</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:BiogeographicalRegions:0.0}Bio-GeographicalRegionType/count">2</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:Buildings:0.0}BuildingType/1">{http://www.opengis.net/gml/3.2}boundedBy</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:Buildings:0.0}BuildingType/2">{http://www.opengis.net/gml/3.2/BoundingShapeType}choice_1</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:Buildings:0.0}BuildingType/count">2</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:Buildings:0.0}ControlTowerType/1">{http://www.opengis.net/gml/3.2}boundedBy</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:Buildings:0.0}ControlTowerType/2">{http://www.opengis.net/gml/3.2/BoundingShapeType}choice_1</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:Buildings:0.0}ControlTowerType/count">2</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:CommonTransportElements:3.0}AccessRestrictionType/1">{http://www.opengis.net/gml/3.2}boundedBy</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:CommonTransportElements:3.0}AccessRestrictionType/2">{http://www.opengis.net/gml/3.2/BoundingShapeType}choice_1</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:CommonTransportElements:3.0}AccessRestrictionType/count">2</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:CommonTransportElements:3.0}ConditionOfFacilityType/1">{http://www.opengis.net/gml/3.2}boundedBy</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:CommonTransportElements:3.0}ConditionOfFacilityType/2">{http://www.opengis.net/gml/3.2/BoundingShapeType}choice_1</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:CommonTransportElements:3.0}ConditionOfFacilityType/count">2</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:CommonTransportElements:3.0}MaintenanceAuthorityType/1">{http://www.opengis.net/gml/3.2}boundedBy</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:CommonTransportElements:3.0}MaintenanceAuthorityType/2">{http://www.opengis.net/gml/3.2/BoundingShapeType}choice_1</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:CommonTransportElements:3.0}MaintenanceAuthorityType/count">2</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:CommonTransportElements:3.0}MarkerPostType/1">{urn:x-inspire:specification:gmlas:CommonTransportElements:3.0}geometry</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:CommonTransportElements:3.0}MarkerPostType/2">{http://www.opengis.net/gml/3.2}Point</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:CommonTransportElements:3.0}MarkerPostType/count">2</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:CommonTransportElements:3.0}OwnerAuthorityType/1">{http://www.opengis.net/gml/3.2}boundedBy</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:CommonTransportElements:3.0}OwnerAuthorityType/2">{http://www.opengis.net/gml/3.2/BoundingShapeType}choice_1</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:CommonTransportElements:3.0}OwnerAuthorityType/count">2</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:CommonTransportElements:3.0}RestrictionForVehiclesType/1">{http://www.opengis.net/gml/3.2}boundedBy</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:CommonTransportElements:3.0}RestrictionForVehiclesType/2">{http://www.opengis.net/gml/3.2/BoundingShapeType}choice_1</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:CommonTransportElements:3.0}RestrictionForVehiclesType/count">2</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:CommonTransportElements:3.0}TrafficFlowDirectionType/1">{http://www.opengis.net/gml/3.2}boundedBy</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:CommonTransportElements:3.0}TrafficFlowDirectionType/2">{http://www.opengis.net/gml/3.2/BoundingShapeType}choice_1</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:CommonTransportElements:3.0}TrafficFlowDirectionType/count">2</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:CommonTransportElements:3.0}TransportAreaType/1">{urn:x-inspire:specification:gmlas:Network:3.2}geometry</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:CommonTransportElements:3.0}TransportAreaType/2">{http://www.opengis.net/gml/3.2/AbstractSurface}choice</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:CommonTransportElements:3.0}TransportAreaType/count">2</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:CommonTransportElements:3.0}TransportLinkSequenceType/1">{http://www.opengis.net/gml/3.2}boundedBy</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:CommonTransportElements:3.0}TransportLinkSequenceType/2">{http://www.opengis.net/gml/3.2/BoundingShapeType}choice_1</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:CommonTransportElements:3.0}TransportLinkSequenceType/count">2</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:CommonTransportElements:3.0}TransportLinkSetType/1">{http://www.opengis.net/gml/3.2}boundedBy</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:CommonTransportElements:3.0}TransportLinkSetType/2">{http://www.opengis.net/gml/3.2/BoundingShapeType}choice_1</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:CommonTransportElements:3.0}TransportLinkSetType/count">2</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:CommonTransportElements:3.0}TransportLinkType/1">{urn:x-inspire:specification:gmlas:Network:3.2}centrelineGeometry</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:CommonTransportElements:3.0}TransportLinkType/2">{http://www.opengis.net/gml/3.2/AbstractCurve}choice</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:CommonTransportElements:3.0}TransportLinkType/count">2</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:CommonTransportElements:3.0}TransportNetworkType/1">{http://www.opengis.net/gml/3.2}boundedBy</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:CommonTransportElements:3.0}TransportNetworkType/2">{http://www.opengis.net/gml/3.2/BoundingShapeType}choice_1</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:CommonTransportElements:3.0}TransportNetworkType/count">2</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:CommonTransportElements:3.0}TransportNodeType/1">{urn:x-inspire:specification:gmlas:Network:3.2}geometry</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:CommonTransportElements:3.0}TransportNodeType/2">{http://www.opengis.net/gml/3.2}Point</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:CommonTransportElements:3.0}TransportNodeType/count">2</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:CommonTransportElements:3.0}TransportPointType/1">{urn:x-inspire:specification:gmlas:CommonTransportElements:3.0}geometry</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:CommonTransportElements:3.0}TransportPointType/2">{http://www.opengis.net/gml/3.2}Point</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:CommonTransportElements:3.0}TransportPointType/count">2</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:CommonTransportElements:3.0}TransportPropertyType/1">{http://www.opengis.net/gml/3.2}boundedBy</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:CommonTransportElements:3.0}TransportPropertyType/2">{http://www.opengis.net/gml/3.2/BoundingShapeType}choice_1</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:CommonTransportElements:3.0}TransportPropertyType/count">2</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:CommonTransportElements:3.0}VerticalPositionType/1">{http://www.opengis.net/gml/3.2}boundedBy</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:CommonTransportElements:3.0}VerticalPositionType/2">{http://www.opengis.net/gml/3.2/BoundingShapeType}choice_1</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:CommonTransportElements:3.0}VerticalPositionType/count">2</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:GeographicalNames:3.0}NamedPlaceType/1">{urn:x-inspire:specification:gmlas:GeographicalNames:3.0}geometry</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:GeographicalNames:3.0}NamedPlaceType/2">{http://www.opengis.net/gml/3.2/AbstractGeometry}choice</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:GeographicalNames:3.0}NamedPlaceType/count">2</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:HabitatsAndBiotopes:0.0}HabitatType/1">{http://www.opengis.net/gml/3.2}boundedBy</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:HabitatsAndBiotopes:0.0}HabitatType/2">{http://www.opengis.net/gml/3.2/BoundingShapeType}choice_1</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:HabitatsAndBiotopes:0.0}HabitatType/count">2</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:Network:3.2}CrossReferenceType/1">{http://www.opengis.net/gml/3.2}boundedBy</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:Network:3.2}CrossReferenceType/2">{http://www.opengis.net/gml/3.2/BoundingShapeType}choice_1</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:Network:3.2}CrossReferenceType/count">2</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:Network:3.2}GeneralisedLinkType/1">{http://www.opengis.net/gml/3.2}boundedBy</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:Network:3.2}GeneralisedLinkType/2">{http://www.opengis.net/gml/3.2/BoundingShapeType}choice_1</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:Network:3.2}GeneralisedLinkType/count">2</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:Network:3.2}GradeSeparatedCrossingType/1">{http://www.opengis.net/gml/3.2}boundedBy</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:Network:3.2}GradeSeparatedCrossingType/2">{http://www.opengis.net/gml/3.2/BoundingShapeType}choice_1</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:Network:3.2}GradeSeparatedCrossingType/count">2</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:Network:3.2}LinkSequenceType/1">{http://www.opengis.net/gml/3.2}boundedBy</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:Network:3.2}LinkSequenceType/2">{http://www.opengis.net/gml/3.2/BoundingShapeType}choice_1</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:Network:3.2}LinkSequenceType/count">2</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:Network:3.2}LinkSetType/1">{http://www.opengis.net/gml/3.2}boundedBy</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:Network:3.2}LinkSetType/2">{http://www.opengis.net/gml/3.2/BoundingShapeType}choice_1</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:Network:3.2}LinkSetType/count">2</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:Network:3.2}LinkType/1">{urn:x-inspire:specification:gmlas:Network:3.2}centrelineGeometry</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:Network:3.2}LinkType/2">{http://www.opengis.net/gml/3.2/AbstractCurve}choice</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:Network:3.2}LinkType/count">2</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:Network:3.2}NetworkAreaType/1">{urn:x-inspire:specification:gmlas:Network:3.2}geometry</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:Network:3.2}NetworkAreaType/2">{http://www.opengis.net/gml/3.2/AbstractSurface}choice</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:Network:3.2}NetworkAreaType/count">2</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:Network:3.2}NetworkConnectionType/1">{http://www.opengis.net/gml/3.2}boundedBy</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:Network:3.2}NetworkConnectionType/2">{http://www.opengis.net/gml/3.2/BoundingShapeType}choice_1</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:Network:3.2}NetworkConnectionType/count">2</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:Network:3.2}NetworkElementType/1">{http://www.opengis.net/gml/3.2}boundedBy</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:Network:3.2}NetworkElementType/2">{http://www.opengis.net/gml/3.2/BoundingShapeType}choice_1</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:Network:3.2}NetworkElementType/count">2</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:Network:3.2}NetworkPropertyType/1">{http://www.opengis.net/gml/3.2}boundedBy</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:Network:3.2}NetworkPropertyType/2">{http://www.opengis.net/gml/3.2/BoundingShapeType}choice_1</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:Network:3.2}NetworkPropertyType/count">2</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:Network:3.2}NetworkType/1">{http://www.opengis.net/gml/3.2}boundedBy</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:Network:3.2}NetworkType/2">{http://www.opengis.net/gml/3.2/BoundingShapeType}choice_1</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:Network:3.2}NetworkType/count">2</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:Network:3.2}NodeType/1">{urn:x-inspire:specification:gmlas:Network:3.2}geometry</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:Network:3.2}NodeType/2">{http://www.opengis.net/gml/3.2}Point</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:Network:3.2}NodeType/count">2</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:ProtectedSites:3.0}ProtectedSiteType/1">{urn:x-inspire:specification:gmlas:ProtectedSites:3.0}geometry</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:ProtectedSites:3.0}ProtectedSiteType/2">{http://www.opengis.net/gml/3.2/AbstractGeometry}choice</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:ProtectedSites:3.0}ProtectedSiteType/count">2</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:ProtectedSitesFull:3.0}ProtectedSiteType/1">{urn:x-inspire:specification:gmlas:ProtectedSites:3.0}geometry</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:ProtectedSitesFull:3.0}ProtectedSiteType/2">{http://www.opengis.net/gml/3.2/AbstractGeometry}choice</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:ProtectedSitesFull:3.0}ProtectedSiteType/count">2</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:ProtectedSitesFull:3.0}ResponsibleAgencyType/1">{http://www.opengis.net/gml/3.2}boundedBy</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:ProtectedSitesFull:3.0}ResponsibleAgencyType/2">{http://www.opengis.net/gml/3.2/BoundingShapeType}choice_1</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:ProtectedSitesFull:3.0}ResponsibleAgencyType/count">2</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:SpeciesDistribution:0.0}SpeciesAggregationUnitType/1">{http://www.opengis.net/gml/3.2}boundedBy</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:SpeciesDistribution:0.0}SpeciesAggregationUnitType/2">{http://www.opengis.net/gml/3.2/BoundingShapeType}choice_1</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:SpeciesDistribution:0.0}SpeciesAggregationUnitType/count">2</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:SpeciesDistribution:0.0}SpeciesDistributionType/1">{http://www.opengis.net/gml/3.2}boundedBy</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:SpeciesDistribution:0.0}SpeciesDistributionType/2">{http://www.opengis.net/gml/3.2/BoundingShapeType}choice_1</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:SpeciesDistribution:0.0}SpeciesDistributionType/count">2</property>
+</hale-project>

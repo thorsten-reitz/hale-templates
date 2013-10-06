@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<hale-project version="2.7.0.201310041528">
+    <name>Map to INSPIRE Air Transport Network 3.0</name>
+    <author>Thorsten Reitz</author>
+    <description>Preconfigured with INSPIRE Air Transport Network as target schema and associated code lists.</description>
+    <created>2013-10-05T22:56:49.328+02:00</created>
+    <modified>2013-10-06T10:24:07.960+02:00</modified>
+    <save-config action-id="project.save" provider-id="eu.esdihumboldt.hale.io.project.hale25.xml.writer">
+        <setting name="projectFiles.separate">false</setting>
+        <setting name="target">file:/C:/Projekte/thorsten/hale-src/hale/util/plugins/eu.esdihumboldt.util.resource.schemas.inspire.annex1/annex1/projects/AirTransportNetwork.halex</setting>
+        <setting name="charset">UTF-8</setting>
+        <setting name="contentType">eu.esdihumboldt.hale.io.project.hale25.xml</setting>
+    </save-config>
+    <resource action-id="eu.esdihumboldt.hale.io.schema.read.target" provider-id="eu.esdihumboldt.hale.io.xsd.reader">
+        <setting name="resourceId">f3c0fb4c-4e35-475c-826d-08f412d207e8</setting>
+        <setting name="source">../3.0/AirTransportNetwork.xsd</setting>
+        <setting name="charset">UTF-8</setting>
+        <setting name="contentType">eu.esdihumboldt.hale.io.xsd</setting>
+    </resource>
+    <resource action-id="eu.esdihumboldt.hale.codelist.read" provider-id="eu.esdihumboldt.hale.io.codelist.xml.reader">
+        <setting name="resourceId">13636fda-588a-43fd-9ad8-4592372530b4</setting>
+        <setting name="source">../codelists/AccessRestrictionValue.xml</setting>
+        <setting name="charset">UTF-8</setting>
+        <setting name="contentType">eu.esdihumboldt.hale.io.codelist.xml</setting>
+    </resource>
+    <resource action-id="eu.esdihumboldt.hale.codelist.read" provider-id="eu.esdihumboldt.hale.io.codelist.xml.reader">
+        <setting name="resourceId">f0a8b12c-a90c-4634-be10-a235e15cd15e</setting>
+        <setting name="source">../codelists/ConditionOfFacilityValue.xml</setting>
+        <setting name="charset">UTF-8</setting>
+        <setting name="contentType">eu.esdihumboldt.hale.io.codelist.xml</setting>
+    </resource>
+    <resource action-id="eu.esdihumboldt.hale.codelist.read" provider-id="eu.esdihumboldt.hale.io.codelist.xml.reader">
+        <setting name="resourceId">97bde862-0b04-485d-881d-bd1ee631c27b</setting>
+        <setting name="source">../codelists/LinkDirectionValue.xml</setting>
+        <setting name="charset">UTF-8</setting>
+        <setting name="contentType">eu.esdihumboldt.hale.io.codelist.xml</setting>
+    </resource>
+    <resource action-id="eu.esdihumboldt.hale.codelist.read" provider-id="eu.esdihumboldt.hale.io.codelist.xml.reader">
+        <setting name="resourceId">583ff79b-461d-4cc3-a55c-31fdd39575c0</setting>
+        <setting name="source">../codelists/RestrictionTypeValue.xml</setting>
+        <setting name="charset">UTF-8</setting>
+        <setting name="contentType">eu.esdihumboldt.hale.io.codelist.xml</setting>
+    </resource>
+    <file name="styles.sld" location="AirTransportNetwork.halex.styles.sld"/>
+    <file name="alignment.xml" location="AirTransportNetwork.halex.alignment.xml"/>
+    <complex-property name="codelists">
+        <associations>
+            <codeList identifier="ConditionOfFacilityValue" namespace="urn:x-inspire:specification:gmlas:BaseTypes:3.2">
+                <entity>
+                    <type name="ConditionOfAirFacilityType" namespace="urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0"/>
+                    <property name="currentStatus" namespace="urn:x-inspire:specification:gmlas:CommonTransportElements:3.0"/>
+                </entity>
+            </codeList>
+        </associations>
+    </complex-property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}AerodromeAreaType/1">{urn:x-inspire:specification:gmlas:Network:3.2}geometry</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}AerodromeAreaType/2">{http://www.opengis.net/gml/3.2/AbstractSurface}choice</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}AerodromeAreaType/count">2</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}AerodromeCategoryType/1">{http://www.opengis.net/gml/3.2}boundedBy</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}AerodromeCategoryType/2">{http://www.opengis.net/gml/3.2/BoundingShapeType}choice_1</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}AerodromeCategoryType/count">2</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}AerodromeNodeType/1">{urn:x-inspire:specification:gmlas:Network:3.2}geometry</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}AerodromeNodeType/2">{http://www.opengis.net/gml/3.2}Point</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}AerodromeNodeType/count">2</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}AerodromeTypeType/1">{http://www.opengis.net/gml/3.2}boundedBy</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}AerodromeTypeType/2">{http://www.opengis.net/gml/3.2/BoundingShapeType}choice_1</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}AerodromeTypeType/count">2</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}AirLinkSequenceType/1">{http://www.opengis.net/gml/3.2}boundedBy</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}AirLinkSequenceType/2">{http://www.opengis.net/gml/3.2/BoundingShapeType}choice_1</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}AirLinkSequenceType/count">2</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}AirLinkType/1">{urn:x-inspire:specification:gmlas:Network:3.2}centrelineGeometry</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}AirLinkType/2">{http://www.opengis.net/gml/3.2/AbstractCurve}choice</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}AirLinkType/count">2</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}AirNodeType/1">{urn:x-inspire:specification:gmlas:Network:3.2}geometry</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}AirNodeType/2">{http://www.opengis.net/gml/3.2}Point</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}AirNodeType/count">2</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}AirRouteLinkType/1">{urn:x-inspire:specification:gmlas:Network:3.2}centrelineGeometry</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}AirRouteLinkType/2">{http://www.opengis.net/gml/3.2/AbstractCurve}choice</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}AirRouteLinkType/count">2</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}AirRouteType/1">{http://www.opengis.net/gml/3.2}boundedBy</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}AirRouteType/2">{http://www.opengis.net/gml/3.2/BoundingShapeType}choice_1</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}AirRouteType/count">2</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}AirspaceAreaType/1">{urn:x-inspire:specification:gmlas:Network:3.2}geometry</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}AirspaceAreaType/2">{http://www.opengis.net/gml/3.2/AbstractSurface}choice</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}AirspaceAreaType/count">2</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}ApronAreaType/1">{urn:x-inspire:specification:gmlas:Network:3.2}geometry</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}ApronAreaType/2">{http://www.opengis.net/gml/3.2/AbstractSurface}choice</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}ApronAreaType/count">2</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}ConditionOfAirFacilityType/1">{http://www.opengis.net/gml/3.2}boundedBy</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}ConditionOfAirFacilityType/2">{http://www.opengis.net/gml/3.2/BoundingShapeType}choice_1</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}ConditionOfAirFacilityType/count">2</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}DesignatedPointType/1">{urn:x-inspire:specification:gmlas:Network:3.2}geometry</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}DesignatedPointType/2">{http://www.opengis.net/gml/3.2}Point</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}DesignatedPointType/count">2</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}ElementLengthType/1">{http://www.opengis.net/gml/3.2}boundedBy</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}ElementLengthType/2">{http://www.opengis.net/gml/3.2/BoundingShapeType}choice_1</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}ElementLengthType/count">2</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}ElementWidthType/1">{http://www.opengis.net/gml/3.2}boundedBy</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}ElementWidthType/2">{http://www.opengis.net/gml/3.2/BoundingShapeType}choice_1</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}ElementWidthType/count">2</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}FieldElevationType/1">{http://www.opengis.net/gml/3.2}boundedBy</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}FieldElevationType/2">{http://www.opengis.net/gml/3.2/BoundingShapeType}choice_1</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}FieldElevationType/count">2</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}InstrumentApproachProcedureType/1">{urn:x-inspire:specification:gmlas:Network:3.2}centrelineGeometry</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}InstrumentApproachProcedureType/2">{http://www.opengis.net/gml/3.2/AbstractCurve}choice</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}InstrumentApproachProcedureType/count">2</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}LowerAltitudeLimitType/1">{http://www.opengis.net/gml/3.2}boundedBy</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}LowerAltitudeLimitType/2">{http://www.opengis.net/gml/3.2/BoundingShapeType}choice_1</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}LowerAltitudeLimitType/count">2</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}NavaidType/1">{urn:x-inspire:specification:gmlas:Network:3.2}geometry</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}NavaidType/2">{http://www.opengis.net/gml/3.2}Point</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}NavaidType/count">2</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}ProcedureLinkType/1">{urn:x-inspire:specification:gmlas:Network:3.2}centrelineGeometry</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}ProcedureLinkType/2">{http://www.opengis.net/gml/3.2/AbstractCurve}choice</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}ProcedureLinkType/count">2</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}RunwayAreaType/1">{urn:x-inspire:specification:gmlas:Network:3.2}geometry</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}RunwayAreaType/2">{http://www.opengis.net/gml/3.2/AbstractSurface}choice</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}RunwayAreaType/count">2</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}RunwayCentrelinePointType/1">{urn:x-inspire:specification:gmlas:Network:3.2}geometry</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}RunwayCentrelinePointType/2">{http://www.opengis.net/gml/3.2}Point</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}RunwayCentrelinePointType/count">2</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}StandardInstrumentArrivalType/1">{urn:x-inspire:specification:gmlas:Network:3.2}centrelineGeometry</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}StandardInstrumentArrivalType/2">{http://www.opengis.net/gml/3.2/AbstractCurve}choice</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}StandardInstrumentArrivalType/count">2</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}StandardInstrumentDepartureType/1">{urn:x-inspire:specification:gmlas:Network:3.2}centrelineGeometry</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}StandardInstrumentDepartureType/2">{http://www.opengis.net/gml/3.2/AbstractCurve}choice</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}StandardInstrumentDepartureType/count">2</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}SurfaceCompositionType/1">{http://www.opengis.net/gml/3.2}boundedBy</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}SurfaceCompositionType/2">{http://www.opengis.net/gml/3.2/BoundingShapeType}choice_1</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}SurfaceCompositionType/count">2</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}TaxiwayAreaType/1">{urn:x-inspire:specification:gmlas:Network:3.2}geometry</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}TaxiwayAreaType/2">{http://www.opengis.net/gml/3.2/AbstractSurface}choice</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}TaxiwayAreaType/count">2</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}TouchDownLiftOffType/1">{urn:x-inspire:specification:gmlas:Network:3.2}geometry</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}TouchDownLiftOffType/2">{http://www.opengis.net/gml/3.2}Point</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}TouchDownLiftOffType/count">2</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}UpperAltitudeLimitType/1">{http://www.opengis.net/gml/3.2}boundedBy</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}UpperAltitudeLimitType/2">{http://www.opengis.net/gml/3.2/BoundingShapeType}choice_1</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}UpperAltitudeLimitType/count">2</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}UseRestrictionType/1">{http://www.opengis.net/gml/3.2}boundedBy</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}UseRestrictionType/2">{http://www.opengis.net/gml/3.2/BoundingShapeType}choice_1</property>
+    <property name="defaultGeometry:{urn:x-inspire:specification:gmlas:AirTransportNetwork:3.0}UseRestrictionType/count">2</property>
+</hale-project>
